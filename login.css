@@ -1,0 +1,138 @@
+/* login.css - Full Fixed Version */
+body {
+    justify-content: center;
+    background-color: rgb(31, 31, 31);
+    color: beige;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.MainTitle {
+    margin: 20px;
+    padding: 10px;
+    font-size: 10vw;
+    text-align: center;
+    display: block;
+    transition: all 0.6s ease;
+    color: beige;
+}
+
+.MainTitle:hover {
+    color: rgb(31, 31, 31);
+}
+
+#login {
+    background-color: rgb(31, 31, 31);
+    border-radius: 20px;
+    padding: 30px;
+    width: 80%;
+    max-width: 500px;
+    margin: 40px auto;
+    border: 2px solid beige;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.inputPlace {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    font-size: 2vw;
+    background-color: rgb(31, 31, 31);
+    border: 1px solid beige;
+    border-radius: 20px;
+    color: beige;
+    transition: all 0.3s ease;
+}
+
+.inputPlace:focus {
+    outline: none;
+    background-color: rgb(31, 31, 31);
+    box-shadow: 0 0 10px beige;
+}
+
+#Utype {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    font-size: 2vw;
+    background-color: rgb(31, 31, 31);
+    border: 1px solid beige;
+    border-radius: 20px;
+    color: beige;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='beige'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 12px;
+    padding-right: 35px;
+    transition: all 0.3s ease;
+}
+
+#Utype:hover {
+    background-color: rgb(31, 31, 31);
+    border-color: rgb(124, 111, 88);
+}
+
+#suuu {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    font-size: 2vw;
+    background-color: rgb(31, 31, 31);
+    border: 1px solid beige;
+    border-radius: 20px;
+    color: beige;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#suuu:hover {
+    background-color: rgb(31, 31, 31);
+    transform: scale(1.02);
+}
+
+#remember {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0;
+    font-size: 2vw;
+}
+
+#remember-me {
+    width: 20px;
+    height: 20px;
+    accent-color: beige;
+    cursor: pointer;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .MainTitle {
+        font-size: 15vw;
+    }
+    
+    .inputPlace, #Utype, #suuu, #remember {
+        font-size: 4vw;
+        padding: 12px;
+    }
+    
+    #Utype {
+        background-position: right 10px center;
+        padding-right: 30px;
+    }
+    
+    #login {
+        width: 90%;
+        padding: 20px;
+    }
+}
